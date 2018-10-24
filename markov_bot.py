@@ -1,5 +1,6 @@
 
 import os.path, pickle, hashlib, logging, time, sys, traceback, random, unicodedata, os, gc, json, urllib.error, urllib.parse, urllib.request, socket, requests, shlex
+from telegram.ext import Updater
 # minimal Telegram bot library
 SENT = False
 
