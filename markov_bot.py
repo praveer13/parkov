@@ -139,7 +139,7 @@ LANGS = ["af","an","bg","bs","ca","cs","cy","da","de","el","en","en-gb","en-sc",
 
 gcache = []
 # how many groups will be cached at most at one time
-max_cache_size = 10
+max_cache_size = 100
 # GC is forced every N group unloads
 gc_every_unload = 30
 gc_counter = gc_every_unload
