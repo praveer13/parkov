@@ -1,6 +1,5 @@
 
 import os.path, pickle, hashlib, logging, time, sys, traceback, random, unicodedata, os, gc, json, urllib.error, urllib.parse, urllib.request, socket, requests, shlex
-from telegram.ext import Updater
 # minimal Telegram bot library
 SENT = False
 
@@ -164,14 +163,7 @@ def save(reason):
     
 bot = TelegramBot(T)
 MY_USERNAME = bot.getMe().result.username.lower()
-PORT = int(os.environ.get('PORT', '8443'))
-updater = Updater(T)
-# add handlers
-updater.start_webhook(listen="0.0.0.0",
-                      port=PORT,
-                      url_path=T)
-updater.bot.set_webhook("https://obscure-fjord-81251.herokuapp.com/" + T)
-updater.idle()
+
 last_msg_id = 0
 
 def addMessage(message, g):

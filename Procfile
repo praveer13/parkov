@@ -1,1 +1,1 @@
-web: python markov_bot.py
+worker: python markov_bot.py
