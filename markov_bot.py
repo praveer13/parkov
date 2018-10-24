@@ -300,8 +300,6 @@ try:
                 admbypass = admbypass or update.message.chat.all_members_are_administrators
             except:
                 pass
-            print(chat_id)
-            print("message: "+str(message))
 
             if chat_id not in gcache:
                 load_group(chat_id)
